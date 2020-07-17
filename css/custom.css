@@ -1,0 +1,93 @@
+/* Background */
+
+body {
+	margin-top: 15%;
+	background: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.full {
+  background: url(../resources/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+}
+
+/* Picture and text */
+
+.profilepicture {
+    width: 40%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    padding-top: 0.8em;
+}
+
+.text {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Social icons */
+
+.social {
+    font-size: 20px;
+    padding-top: 2em;
+}
+
+.iconlist {
+	overflow: auto;
+    padding-right: 2em;
+}
+
+.iconitem {
+	list-style-type: none;
+    display: inline;
+}
+
+.iconprop {
+    color: white;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.iconitem:hover {
+    opacity: .7;
+}
+
+/* Support for mobile */
+
+@media (min-width: 992px) { 
+    
+    .profilepicture {
+        float: right;
+        width: 60% !important;
+    }
+    .text {
+        text-align: left;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .iconlist {
+        padding: 0 !important;
+        padding-right: 0 !important;
+        overflow: hidden !important;
+    }
+}
+
+/* Animations */
+p, h1, .social, .profilepicture {
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
