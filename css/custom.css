@@ -1,3 +1,8 @@
+/* Global properties */
+a { 
+    text-decoration: none
+}
+
 /* Background */
 
 body {
@@ -19,10 +24,9 @@ body {
 /* Picture and text */
 
 .profilepicture {
-    width: 40%;
     height: auto;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     padding-top: 0.8em;
 }
 
@@ -35,12 +39,11 @@ body {
 
 .social {
     font-size: 20px;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .iconlist {
-	overflow: auto;
-    padding-right: 2em;
+    padding-left: 2em;
 }
 
 .iconitem {
@@ -61,11 +64,6 @@ body {
 /* Support for mobile */
 
 @media (min-width: 992px) { 
-    
-    .profilepicture {
-        float: right;
-        width: 60% !important;
-    }
     .text {
         text-align: left;
         padding-left: 0 !important;
