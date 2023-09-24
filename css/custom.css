@@ -1,3 +1,8 @@
+/* Global properties */
+a { 
+    text-decoration: none
+}
+
 /* Background */
 
 body {
@@ -8,22 +13,21 @@ body {
 }
 
 .full {
-  background: url(../resources/background.jpg) no-repeat center center fixed; 
+  background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(../resources/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   min-height: 100%;
+  opacity: 0.95;
 }
 
 /* Picture and text */
 
 .profilepicture {
-    width: 40%;
     height: auto;
-    max-width: 400px;
-    max-height: 400px;
-    padding-top: 0.8em;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .text {
@@ -35,12 +39,11 @@ body {
 
 .social {
     font-size: 20px;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .iconlist {
-	overflow: auto;
-    padding-right: 2em;
+    padding-inline-start: 0;
 }
 
 .iconitem {
@@ -61,11 +64,6 @@ body {
 /* Support for mobile */
 
 @media (min-width: 992px) { 
-    
-    .profilepicture {
-        float: right;
-        width: 60% !important;
-    }
     .text {
         text-align: left;
         padding-left: 0 !important;
