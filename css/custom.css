@@ -1,12 +1,17 @@
 /* Global properties */
-a { 
-    text-decoration: none
+a {
+    color: #9ecbff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #d2e3fc;
 }
 
 /* Background */
 
 body {
-	margin-top: 15%;
+	margin-top: 0;
 	background: none;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -61,6 +66,10 @@ body {
     opacity: .7;
 }
 
+.iconitem a {
+    text-decoration: none;
+}
+
 /* Support for mobile */
 
 @media (min-width: 992px) { 
@@ -74,6 +83,57 @@ body {
         padding-right: 0 !important;
         overflow: hidden !important;
     }
+}
+
+/* Hero and content sections */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.scrollcue {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50%      { transform: translate(-50%, 10px); }
+}
+
+.content {
+    padding-bottom: 3rem;
+}
+
+.panel {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.entry {
+    margin-bottom: 1.5rem;
+}
+
+.entry .when {
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.entry .where {
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 0.85;
 }
 
 /* Animations */
