@@ -16,15 +16,15 @@
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- Page Content -->
-    <div class="container">
+    <!-- Hero -->
+    <div class="container hero">
         <div class="row">
             <div class="col-lg-4 text-center">
                 <div> 
@@ -35,16 +35,16 @@
                         <li class="iconitem">
                             <a href="https://nl.linkedin.com/in/lukasant">
                                 <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle-thin fa-stack-2x iconprop"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x iconprop"></i>
+                                    <i class="fa-regular fa-circle fa-stack-2x iconprop"></i>
+                                    <i class="fa-brands fa-linkedin fa-stack-1x iconprop"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="iconitem">
                             <a href="https://www.instagram.com/antlukas/">
                                 <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle-thin fa-stack-2x iconprop"></i>
-                                    <i class="fa fa-instagram fa-stack-1x iconprop"></i>
+                                    <i class="fa-regular fa-circle fa-stack-2x iconprop"></i>
+                                    <i class="fa-brands fa-instagram fa-stack-1x iconprop"></i>
                                 </span>
                             </a>
                         </li>
@@ -55,26 +55,94 @@
                 <div>
                     <h1>Lukas Ant</h1>
                     <br>
-                    <p class="lead">I am a senior software engineer with a master in Computer Science and Engineering.</p>
+                    <p class="lead">Senior software engineer with a master's in Computer Science and Engineering.</p>
                     <p class="lead">
-                        In both my private and professional life, I am always seeking new adventures. 
-                        I embrace challenges and push boundaries to constantly learn and grow. 
-                        Whether it's exploring uncharted territories in software development or embarking on thrilling outdoor expeditions, I am fueled by the excitement of the unknown. 
-                        With a Master's degree in Computer Science, I use my expertise to drive innovation and harmonize clean energy at <a href="https://iwell.eu" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">iwell</a>.
+                        At <a href="https://iwell.eu" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">iwell</a> I build and run the C# energy management system that controls 400+ battery storage systems, from the core platform to the Ansible and CI/CD pipelines behind it.
+                        Before that, I spent four years automating production processes at Prodrive Technologies.
+                        Off the clock: survival running, sailing, and hiking in the Alps.
                     </p>
                 </div>
             </div>
         </div>
         <!-- /.row -->
 
+        <a href="#content" class="scrollcue" aria-label="Scroll down to content">
+            <i class="fa-solid fa-chevron-down fa-2x iconprop"></i>
+        </a>
+
     </div>
     <!-- /.container -->
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
+    <!-- Page Content -->
+    <div class="container content" id="content">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+        <section class="panel">
+            <h2>Experience</h2>
+            <div class="entry">
+                <h5>Senior C# Backend Engineer <span class="where">@ <a href="https://iwell.eu">iwell</a>, Utrecht</span></h5>
+                <p class="when">Jul 2025 &ndash; Present</p>
+                <ul>
+                    <li>Develop and maintain the C# EMS for Battery Energy Storage Systems (BESS): setpoint execution, safety, and reporting.</li>
+                    <li>Lead the rebuild of the Battery Controller core, from a single BMS + PCS setup to a modern architecture for new business use cases.</li>
+                    <li>Build and run Wattson, an AI-powered EMS analysis tool that helps operations troubleshoot using internal documentation and log analysis.</li>
+                    <li>Run operations for 400+ batteries: Ansible, CI/CD pipelines, security, and networking.</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h5>Full-Stack Automation Engineer <span class="where">@ Politie Nederland (with Atos), Amstelveen</span></h5>
+                <p class="when">Jan 2024 &ndash; Jun 2025</p>
+            </div>
+            <div class="entry">
+                <h5>Software Engineer <span class="where">@ Prodrive Technologies, Son en Breugel</span></h5>
+                <p class="when">Jan 2020 &ndash; Dec 2023</p>
+                <ul>
+                    <li>Built a reporting dashboard that automated client reports, cutting manual work by 40%.</li>
+                    <li>Automated production processes in the robotics software team, reducing cycle time and total cost of products.</li>
+                    <li>Integrated Visual Inspection cells and Automated Guided Vehicles (AGVs) into production lines.</li>
+                    <li>Integrated an automated bin warehouse with SAP EWM and picking stations (F#, Giraffe).</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h5>Web Developer <span class="where">@ Wolfpack NL, Eindhoven</span></h5>
+                <p class="when">Mar 2018 &ndash; Jan 2019</p>
+                <ul>
+                    <li>Built user interfaces with React and Angular, server-side code in PHP, and styled pages with HTML/CSS.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Backend:</strong> C#, .NET, REST API, microservices, Python, F#, SQL</li>
+                <li><strong>Automation &amp; DevOps:</strong> Ansible, CI/CD, Infrastructure/Configuration-as-Code, Azure DevOps, Git, Jira</li>
+                <li><strong>Cloud:</strong> Azure (Solutions Architect Expert, Administrator Associate), VMware Certified Professional 8</li>
+                <li><strong>AI-assisted development:</strong> Claude Code</li>
+                <li><strong>Web:</strong> Angular, React, ELM, Django, PHP, JavaScript</li>
+                <li><strong>Methodologies:</strong> Agile, Scrum, Kanban, project management, process engineering</li>
+            </ul>
+        </section>
+
+        <section class="panel">
+            <h2>Education</h2>
+            <div class="entry">
+                <h5>M.Sc. Computer Science and Engineering <span class="where">@ Eindhoven University of Technology (TU/e)</span></h5>
+                <p class="when">2019 &ndash; 2022</p>
+                <ul>
+                    <li>Master thesis: <a href="https://research.tue.nl/en/studentTheses/design-of-a-simulation-based-testing-framework-for-industrial-aut/">Design of a Simulation-based Testing Framework for Industrial Automation Solutions</a></li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h5>B.Sc. Software Science <span class="where">@ Eindhoven University of Technology (TU/e)</span></h5>
+                <p class="when">2015 &ndash; 2019</p>
+                <ul>
+                    <li>Bachelor end project: dashboard plugin for the EU Horizon 2020 "HORSE" project</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+    <!-- /.container -->
 
 </body>
 
