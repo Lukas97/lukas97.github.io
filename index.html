@@ -1,148 +1,167 @@
 <!DOCTYPE html>
-<html class="full" lang="en">
+<html lang="en">
 
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal website of Lukas Ant">
+    <meta name="description" content="Lukas Ant, senior C# backend engineer at iwell in Utrecht. Battery Controller core for 400+ battery storage systems, HAL over Modbus, Ansible-managed IPCs, Azure certified.">
     <meta name="author" content="Lukas Ant">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0a0b">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafafa">
+    <link rel="canonical" href="https://lukasant.nl/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0b'/%3E%3Ctext x='32' y='43' font-family='Arial,Helvetica,sans-serif' font-size='30' font-weight='700' fill='%23ededed' text-anchor='middle'%3ELA%3C/text%3E%3C/svg%3E">
 
-    <title>Lukas Ant</title>
+    <title>Lukas Ant | Senior C# Backend Engineer</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="lukasant.nl">
+    <meta property="og:url" content="https://lukasant.nl/">
+    <meta property="og:title" content="Lukas Ant | Senior C# Backend Engineer">
+    <meta property="og:description" content="Senior C# backend engineer at iwell in Utrecht. Battery Controller core for 400+ battery storage systems, HAL over Modbus, Ansible-managed IPCs, Azure certified.">
+    <meta property="og:image" content="https://lukasant.nl/resources/lukas-avatar.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lukas Ant | Senior C# Backend Engineer">
+    <meta name="twitter:description" content="Senior C# backend engineer at iwell in Utrecht. Battery Controller core for 400+ battery storage systems, HAL over Modbus, Ansible-managed IPCs, Azure certified.">
+    <meta name="twitter:image" content="https://lukasant.nl/resources/lukas-avatar.jpg">
 
-    <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-PPIZEGYM1v8zp5Py7UjFb79S58UeqCL9pYVnVPURKEqvioPROaVAJKKLzvH2rDnI" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lukas Ant",
+        "jobTitle": "Senior C# Backend Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "iwell",
+            "url": "https://iwell.eu"
+        },
+        "url": "https://lukasant.nl/",
+        "sameAs": ["https://www.linkedin.com/in/lukasant/"]
+    }
+    </script>
 
 </head>
 
 <body>
 
+    <a class="skip" href="#highlights">Skip to content</a>
+
+    <div class="aurora" aria-hidden="true"></div>
+
+    <!-- Inline SVG icon sprite (replaces Font Awesome CDN) -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <symbol id="i-linkedin" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
+        <symbol id="i-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></symbol>
+        <symbol id="i-arrow-up-right" viewBox="0 0 448 512"><path d="M192 0H448c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V109.3L214.6 291.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L339.9 64H192c-17.7 0-32-14.3-32-32s14.3-32 32-32zM64 64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96H64V128c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z"/></symbol>
+    </svg>
+
+    <header class="topbar">
+        <span class="wordmark">lukasant.nl</span>
+        <nav class="topicons" aria-label="Social links">
+            <a href="https://nl.linkedin.com/in/lukasant" aria-label="LinkedIn"><svg width="1.15em" height="1.15em" fill="currentColor" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+            <a href="https://www.instagram.com/antlukas/" aria-label="Instagram"><svg width="1.15em" height="1.15em" fill="currentColor" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        </nav>
+    </header>
+
     <!-- Hero -->
-    <div class="container hero">
-        <div class="row">
-            <div class="col-lg-4 text-center">
-                <div> 
-                    <img src="resources/lukas.png" alt="Lukas Ant" class="profilepicture rounded-circle">
-                </div>
-                <div class="social ">
-                    <ul class="iconlist">
-                        <li class="iconitem">
-                            <a href="https://nl.linkedin.com/in/lukasant">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa-regular fa-circle fa-stack-2x iconprop"></i>
-                                    <i class="fa-brands fa-linkedin fa-stack-1x iconprop"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="iconitem">
-                            <a href="https://www.instagram.com/antlukas/">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa-regular fa-circle fa-stack-2x iconprop"></i>
-                                    <i class="fa-brands fa-instagram fa-stack-1x iconprop"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <main>
+        <section class="hero">
+            <img src="resources/lukas-avatar.jpg" alt="Portrait of Lukas Ant" class="avatar" width="128" height="128" fetchpriority="high" decoding="async">
+            <h1>Lukas&nbsp;Ant</h1>
+            <p class="tagline">Senior <em>C# backend &amp; DevOps engineer</em></p>
+            <p class="status"><span class="dot" aria-hidden="true"></span>At iwell &middot; Utrecht, NL</p>
+            <p class="bio">
+                At <a href="https://iwell.eu">iwell</a> I work on the Battery Controller team, modernizing the core
+                split out of the C#-based EMS for battery storage, behind a Hardware Abstraction Layer over Modbus
+                for multi-vendor batteries. I commission new hardware on site and manage the Ubuntu IPCs across
+                400+ batteries with Ansible. Before that, I spent four years automating production at Prodrive
+                Technologies.
+            </p>
+            <div class="cta">
+                <a class="btn primary" href="https://nl.linkedin.com/in/lukasant">
+                    <svg width="1em" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-linkedin"/></svg> Connect on LinkedIn
+                </a>
+                <a class="btn ghost" href="https://www.instagram.com/antlukas/" aria-label="Instagram">
+                    <svg width="1em" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-instagram"/></svg>
+                </a>
             </div>
-            <div class="col-lg-8 text text-center">
-                <div>
-                    <h1>Lukas Ant</h1>
-                    <br>
-                    <p class="lead">Senior software engineer with a master's in Computer Science and Engineering.</p>
-                    <p class="lead">
-                        At <a href="https://iwell.eu" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">iwell</a> I build and run the C# energy management system that controls 400+ battery storage systems, from the core platform to the Ansible and CI/CD pipelines behind it.
-                        Before that, I spent four years automating production processes at Prodrive Technologies.
-                        Off the clock: survival running, sailing, and hiking in the Alps.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <a href="#content" class="scrollcue" aria-label="Scroll down to content">
-            <i class="fa-solid fa-chevron-down fa-2x iconprop"></i>
-        </a>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- Page Content -->
-    <div class="container content" id="content">
-
-        <section class="panel">
-            <h2>Experience</h2>
-            <div class="entry">
-                <h5>Senior C# Backend Engineer <span class="where">@ <a href="https://iwell.eu">iwell</a>, Utrecht</span></h5>
-                <p class="when">Jul 2025 &ndash; Present</p>
-                <ul>
-                    <li>Develop and maintain the C# EMS for Battery Energy Storage Systems (BESS): setpoint execution, safety, and reporting.</li>
-                    <li>Lead the rebuild of the Battery Controller core, from a single BMS + PCS setup to a modern architecture for new business use cases.</li>
-                    <li>Build and run Wattson, an AI-powered EMS analysis tool that helps operations troubleshoot using internal documentation and log analysis.</li>
-                    <li>Run operations for 400+ batteries: Ansible, CI/CD pipelines, security, and networking.</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h5>Full-Stack Automation Engineer <span class="where">@ Politie Nederland (with Atos), Amstelveen</span></h5>
-                <p class="when">Jan 2024 &ndash; Jun 2025</p>
-            </div>
-            <div class="entry">
-                <h5>Software Engineer <span class="where">@ Prodrive Technologies, Son en Breugel</span></h5>
-                <p class="when">Jan 2020 &ndash; Dec 2023</p>
-                <ul>
-                    <li>Built a reporting dashboard that automated client reports, cutting manual work by 40%.</li>
-                    <li>Automated production processes in the robotics software team, reducing cycle time and total cost of products.</li>
-                    <li>Integrated Visual Inspection cells and Automated Guided Vehicles (AGVs) into production lines.</li>
-                    <li>Integrated an automated bin warehouse with SAP EWM and picking stations (F#, Giraffe).</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h5>Web Developer <span class="where">@ Wolfpack NL, Eindhoven</span></h5>
-                <p class="when">Mar 2018 &ndash; Jan 2019</p>
-                <ul>
-                    <li>Built user interfaces with React and Angular, server-side code in PHP, and styled pages with HTML/CSS.</li>
-                </ul>
-            </div>
+            <a href="#highlights" class="scrollcue" aria-label="Scroll down to highlights">
+                <svg width="1em" height="1em" fill="currentColor" aria-hidden="true"><use href="#i-chevron-down"/></svg>
+            </a>
         </section>
 
-        <section class="panel">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Backend:</strong> C#, .NET, REST API, microservices, Python, F#, SQL</li>
-                <li><strong>Automation &amp; DevOps:</strong> Ansible, CI/CD, Infrastructure/Configuration-as-Code, Azure DevOps, Git, Jira</li>
-                <li><strong>Cloud:</strong> Azure (Solutions Architect Expert, Administrator Associate), VMware Certified Professional 8</li>
-                <li><strong>AI-assisted development:</strong> Claude Code</li>
-                <li><strong>Web:</strong> Angular, React, ELM, Django, PHP, JavaScript</li>
-                <li><strong>Methodologies:</strong> Agile, Scrum, Kanban, project management, process engineering</li>
+        <!-- Highlights -->
+        <section class="highlights" id="highlights">
+            <h2 class="reveal">A few highlights <span class="h2note">the full story lives on <a href="https://nl.linkedin.com/in/lukasant">LinkedIn</a></span></h2>
+            <div class="cards">
+                <a class="card reveal" href="https://iwell.eu">
+                    <h3>400+ batteries, one EMS</h3>
+                    <p>On iwell's Battery Controller team I'm modernizing the core split out of the C#-based EMS for
+                    BESS: a Hardware Abstraction Layer (HAL) over Modbus absorbs vendor-specific quirks so batteries
+                    from many manufacturers plug in. Plus on-site commissioning, Wattson (an AI troubleshooting tool
+                    over internal docs and logs), and Ansible-managed Ubuntu IPCs across 400+ batteries.</p>
+                    <span class="cardlink">iwell.eu <svg width="0.8em" height="0.8em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+                </a>
+                <a class="card reveal" href="https://nl.linkedin.com/in/lukasant">
+                    <h3>Factory automation</h3>
+                    <p>Four years at Prodrive Technologies automating production: robotics software, visual inspection
+                    cells, AGVs, and a reporting dashboard that cut manual reporting work by 40%.</p>
+                    <span class="cardlink">via LinkedIn <svg width="0.8em" height="0.8em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+                </a>
+                <a class="card reveal" href="https://research.tue.nl/en/studentTheses/design-of-a-simulation-based-testing-framework-for-industrial-aut/">
+                    <h3>M.Sc. Computer Science &amp; Engineering</h3>
+                    <p>TU/e Eindhoven, graduated 2022. Master thesis on a simulation-based testing framework for
+                    industrial automation solutions.</p>
+                    <span class="cardlink">Read the thesis <svg width="0.8em" height="0.8em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
+                </a>
+            </div>
+            <h2 class="reveal stack-title">Toolbox <span class="h2note">C#, DevOps, and cloud certified</span></h2>
+            <ul class="chips reveal">
+                <li class="chip hot">C#</li>
+                <li class="chip hot">.NET</li>
+                <li class="chip hot">Ansible</li>
+                <li class="chip hot">CI/CD</li>
+                <li class="chip hot">Modbus/HAL</li>
+                <li class="chip">REST APIs</li>
+                <li class="chip">Microservices</li>
+                <li class="chip">Python</li>
+                <li class="chip">SQL</li>
+                <li class="chip">IaC/CaC</li>
+                <li class="chip">Git</li>
+                <li class="chip">Jira</li>
+                <li class="chip">Claude Code</li>
+                <li class="chip">Azure Solutions Architect Expert (AZ-305)</li>
+                <li class="chip">Azure Administrator Associate (AZ-104)</li>
+                <li class="chip">Azure Fundamentals (AZ-900)</li>
+                <li class="chip">VMware Certified Professional 8</li>
             </ul>
         </section>
+    </main>
 
-        <section class="panel">
-            <h2>Education</h2>
-            <div class="entry">
-                <h5>M.Sc. Computer Science and Engineering <span class="where">@ Eindhoven University of Technology (TU/e)</span></h5>
-                <p class="when">2019 &ndash; 2022</p>
-                <ul>
-                    <li>Master thesis: <a href="https://research.tue.nl/en/studentTheses/design-of-a-simulation-based-testing-framework-for-industrial-aut/">Design of a Simulation-based Testing Framework for Industrial Automation Solutions</a></li>
-                </ul>
-            </div>
-            <div class="entry">
-                <h5>B.Sc. Software Science <span class="where">@ Eindhoven University of Technology (TU/e)</span></h5>
-                <p class="when">2015 &ndash; 2019</p>
-                <ul>
-                    <li>Bachelor end project: dashboard plugin for the EU Horizon 2020 "HORSE" project</li>
-                </ul>
-            </div>
-        </section>
+    <footer class="footer">
+        <span>&copy; 2026 Lukas Ant</span>
+        <span class="colophon">Plain HTML &amp; CSS. No trackers.</span>
+    </footer>
 
-    </div>
-    <!-- /.container -->
+    <script>
+        // Reveal-on-scroll fallback for browsers without CSS scroll-driven animations
+        if (!CSS.supports('animation-timeline: view()')) {
+            document.documentElement.classList.add('no-sda');
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.15 });
+            document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+        }
+    </script>
 
 </body>
 
