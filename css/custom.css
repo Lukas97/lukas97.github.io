@@ -9,7 +9,7 @@
     --link: #6ee7b7;
     --link-hover: #a7f3d0;
     --grain-opacity: 0.035;
-    --aurora-opacity: 0.22;
+    --scrim: rgba(10, 10, 11, 0.8);
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,7 +23,7 @@
         --link: #047857;
         --link-hover: #065f46;
         --grain-opacity: 0.03;
-        --aurora-opacity: 0.12;
+        --scrim: rgba(250, 250, 250, 0.85);
     }
 }
 
@@ -37,7 +37,9 @@ html {
 
 body {
     margin: 0;
-    background: var(--bg);
+    background: linear-gradient(var(--scrim), var(--scrim)),
+        url("../resources/background-web.jpg") no-repeat center center fixed;
+    background-size: cover;
     color: var(--fg);
     font-family: 'Inter', sans-serif;
     font-size: clamp(1rem, 0.35vw + 0.94rem, 1.125rem);
@@ -45,26 +47,6 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     transition: background 0.3s ease, color 0.3s ease;
-}
-
-/* Aurora gradient mesh: one fixed, blurred layer, slow drift */
-.aurora {
-    position: fixed;
-    inset: -20%;
-    z-index: -1;
-    overflow: hidden;
-    filter: blur(60px);
-    opacity: var(--aurora-opacity);
-    background:
-        radial-gradient(40% 40% at 20% 25%, rgba(16, 185, 129, 0.9), transparent 70%),
-        radial-gradient(35% 35% at 80% 15%, rgba(13, 148, 136, 0.8), transparent 70%),
-        radial-gradient(45% 45% at 60% 80%, rgba(5, 150, 105, 0.7), transparent 70%);
-    animation: drift 32s ease-in-out infinite alternate;
-    will-change: transform;
-}
-
-@keyframes drift {
-    to { transform: translate3d(3%, -2%, 0) rotate(3deg) scale(1.06); }
 }
 
 /* Subtle grain overlay (inline SVG noise, no extra request) */
@@ -203,23 +185,10 @@ h1 {
     color: var(--link);
 }
 
-.status {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: 0.3rem 0.9rem;
-    font-size: 0.85rem;
+.loc {
     color: var(--muted);
-    margin: 0 0 1.5rem;
-}
-
-.status .dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: var(--link);
+    font-size: 0.95rem;
+    margin: -0.5rem 0 1.5rem;
 }
 
 .bio {
@@ -311,15 +280,6 @@ h2 {
     text-wrap: balance;
 }
 
-.h2note {
-    display: block;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    color: var(--muted);
-    margin-top: 0.35rem;
-}
-
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -327,19 +287,10 @@ h2 {
 }
 
 .card {
-    display: block;
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 16px;
     padding: 1.5rem;
-    color: var(--fg);
-    text-decoration: none;
-    transition: border-color 0.2s ease;
-}
-
-.card:hover {
-    border-color: color-mix(in srgb, var(--fg) 35%, transparent);
-    color: var(--fg);
 }
 
 .card h3 {
@@ -356,38 +307,10 @@ h2 {
     text-wrap: pretty;
 }
 
-.cardlink {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--link);
-}
-
-/* Toolbox chips */
-.stack-title {
-    margin-top: 3rem;
-}
-
-.chips {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0;
-    margin: 0;
-}
-
-.chip {
-    border: 1px solid var(--line);
+.thesis {
+    margin: 2.5rem 0 0;
     color: var(--muted);
-    border-radius: 999px;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.8rem;
-    white-space: nowrap;
-}
-
-.chip.hot {
-    color: var(--link);
-    border-color: color-mix(in srgb, var(--link) 45%, transparent);
+    font-size: 0.9rem;
 }
 
 /* Footer */
@@ -410,13 +333,13 @@ h2 {
 }
 
 /* Entrance animation for hero */
-.avatar, h1, .tagline, .status, .bio, .cta {
+.avatar, h1, .tagline, .loc, .bio, .cta {
     animation: fadeup 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .tagline { animation-delay: 0.06s; }
-.status  { animation-delay: 0.12s; }
-.bio     { animation-delay: 0.18s; }
+.loc     { animation-delay: 0.1s; }
+.bio     { animation-delay: 0.14s; }
 .cta     { animation-delay: 0.24s; }
 
 @keyframes fadeup {
@@ -448,7 +371,7 @@ h2 {
 /* Reduced motion: freeze everything, keep content visible */
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .aurora, .scrollcue, .avatar, h1, .tagline, .status, .bio, .cta, .reveal, .skip {
+    .scrollcue, .avatar, h1, .tagline, .loc, .bio, .cta, .reveal, .skip {
         animation: none !important;
     }
     a, .card, .btn, .topicons a, .skip {

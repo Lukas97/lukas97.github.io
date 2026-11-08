@@ -52,14 +52,11 @@
 
     <a class="skip" href="#highlights">Skip to content</a>
 
-    <div class="aurora" aria-hidden="true"></div>
-
     <!-- Inline SVG icon sprite (replaces Font Awesome CDN) -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
         <symbol id="i-linkedin" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></symbol>
         <symbol id="i-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
         <symbol id="i-chevron-down" viewBox="0 0 448 512"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></symbol>
-        <symbol id="i-arrow-up-right" viewBox="0 0 448 512"><path d="M192 0H448c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V109.3L214.6 291.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L339.9 64H192c-17.7 0-32-14.3-32-32s14.3-32 32-32zM64 64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96H64V128c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64z"/></symbol>
     </svg>
 
     <header class="topbar">
@@ -76,13 +73,12 @@
             <img src="resources/lukas-avatar.jpg" alt="Portrait of Lukas Ant" class="avatar" width="128" height="128" fetchpriority="high" decoding="async">
             <h1>Lukas&nbsp;Ant</h1>
             <p class="tagline">Senior <em>C# backend &amp; DevOps engineer</em></p>
-            <p class="status"><span class="dot" aria-hidden="true"></span>At iwell &middot; Utrecht, NL</p>
+            <p class="loc">Utrecht, NL</p>
             <p class="bio">
-                At <a href="https://iwell.eu">iwell</a> I work on the Battery Controller team, modernizing the core
-                split out of the C#-based EMS for battery storage, behind a Hardware Abstraction Layer over Modbus
-                for multi-vendor batteries. I commission new hardware on site and manage the Ubuntu IPCs across
-                400+ batteries with Ansible. Before that, I spent four years automating production at Prodrive
-                Technologies.
+                At <a href="https://iwell.eu">iwell</a> I build and run the software behind 400+ battery storage
+                systems, from the C# Battery Controller to the Ansible-managed infrastructure and CI/CD pipelines.
+                Before that, I spent four years automating production at Prodrive Technologies.
+                Off the clock I chase the same excitement outdoors: survival running, sailing, and hiking in the Alps.
             </p>
             <div class="cta">
                 <a class="btn primary" href="https://nl.linkedin.com/in/lukasant">
@@ -99,49 +95,34 @@
 
         <!-- Highlights -->
         <section class="highlights" id="highlights">
-            <h2 class="reveal">A few highlights <span class="h2note">the full story lives on <a href="https://nl.linkedin.com/in/lukasant">LinkedIn</a></span></h2>
+            <h2 class="reveal">My story</h2>
             <div class="cards">
-                <a class="card reveal" href="https://iwell.eu">
-                    <h3>400+ batteries, one EMS</h3>
-                    <p>On iwell's Battery Controller team I'm modernizing the core split out of the C#-based EMS for
-                    BESS: a Hardware Abstraction Layer (HAL) over Modbus absorbs vendor-specific quirks so batteries
-                    from many manufacturers plug in. Plus on-site commissioning, Wattson (an AI troubleshooting tool
-                    over internal docs and logs), and Ansible-managed Ubuntu IPCs across 400+ batteries.</p>
-                    <span class="cardlink">iwell.eu <svg width="0.8em" height="0.8em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
-                </a>
-                <a class="card reveal" href="https://nl.linkedin.com/in/lukasant">
-                    <h3>Factory automation</h3>
-                    <p>Four years at Prodrive Technologies automating production: robotics software, visual inspection
-                    cells, AGVs, and a reporting dashboard that cut manual reporting work by 40%.</p>
-                    <span class="cardlink">via LinkedIn <svg width="0.8em" height="0.8em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
-                </a>
-                <a class="card reveal" href="https://research.tue.nl/en/studentTheses/design-of-a-simulation-based-testing-framework-for-industrial-aut/">
-                    <h3>M.Sc. Computer Science &amp; Engineering</h3>
-                    <p>TU/e Eindhoven, graduated 2022. Master thesis on a simulation-based testing framework for
-                    industrial automation solutions.</p>
-                    <span class="cardlink">Read the thesis <svg width="0.8em" height="0.8em" fill="currentColor" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span>
-                </a>
+                <article class="card reveal">
+                    <h3>400+ batteries, one C# Battery Controller</h3>
+                    <p>In iwell's Battery Controller team I rebuild and maintain the C# Battery Controller, split out of
+                    our monolithic EMS for battery storage: setpoint execution, safety, and reporting. A Hardware
+                    Abstraction Layer (HAL) over Modbus absorbs vendor-specific quirks so batteries from many
+                    manufacturers plug in. I also commission new vendor hardware on site and built Wattson (an AI
+                    troubleshooting tool over live telemetry, internal docs and logs).</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Infrastructure and automation</h3>
+                    <p>Maintaining a fleet at scale. At iwell I commission and maintain the infrastructure which is used on the IPCs
+                    inside 400+ battery and EMS systems via Ansible. Infrastructure/Configuration-as-Code is used for deployment, support,
+                    security, and monitoring, backed by CI/CD pipelines. Before that, I brought agile ways of
+                    working to a waterfall organization, backed by Ansible automation, CI/CD pipelines, and a
+                    standardized release process.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Factory automation with C#</h3>
+                    <p>Four years at Prodrive Technologies automating production processes in the robotics software
+                    team, reducing cycle time and total cost of products. I integrated Visual Inspection cells and
+                    Automated Guided Vehicles (AGVs) into production lines, improving quality control and reducing
+                    manual production steps, and built a reporting dashboard that automated client reports, cutting
+                    manual work by 40%.</p>
+                </article>
             </div>
-            <h2 class="reveal stack-title">Toolbox <span class="h2note">C#, DevOps, and cloud certified</span></h2>
-            <ul class="chips reveal">
-                <li class="chip hot">C#</li>
-                <li class="chip hot">.NET</li>
-                <li class="chip hot">Ansible</li>
-                <li class="chip hot">CI/CD</li>
-                <li class="chip hot">Modbus/HAL</li>
-                <li class="chip">REST APIs</li>
-                <li class="chip">Microservices</li>
-                <li class="chip">Python</li>
-                <li class="chip">SQL</li>
-                <li class="chip">IaC/CaC</li>
-                <li class="chip">Git</li>
-                <li class="chip">Jira</li>
-                <li class="chip">Claude Code</li>
-                <li class="chip">Azure Solutions Architect Expert (AZ-305)</li>
-                <li class="chip">Azure Administrator Associate (AZ-104)</li>
-                <li class="chip">Azure Fundamentals (AZ-900)</li>
-                <li class="chip">VMware Certified Professional 8</li>
-            </ul>
+            <p class="thesis reveal">M.Sc. Computer Science &amp; Engineering, TU/e 2022 &middot; <a href="https://research.tue.nl/en/studentTheses/design-of-a-simulation-based-testing-framework-for-industrial-aut/">master thesis</a></p>
         </section>
     </main>
 
